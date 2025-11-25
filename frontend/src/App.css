@@ -1,0 +1,149 @@
+/* ===== Global Reset ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #1e1e2f 0%, #121212 100%);
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+/* ===== App Container ===== */
+.app-container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Headings ===== */
+h1 {
+  font-size: 2rem;
+  color: #a3bffa;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: #9adcfb;
+  margin-top: 2rem;
+}
+
+/* ===== Language Select Section ===== */
+.lang-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select {
+  background: #2a2a3c;
+  color: #e0e0e0;
+  border: 1px solid #3b3b4d;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  background: #3b3b4d;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: #3d5afe;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #536dfe;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Swap button icon only */
+.lang-select button {
+  background: #42425a;
+  color: #cfd8dc;
+}
+
+.lang-select button:hover {
+  background: #54546a;
+}
+
+/* ===== Textarea ===== */
+textarea {
+  width: 90%;
+  border: 1px solid #3b3b4d;
+  background: #1f1f2e;
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5px;
+}
+
+textarea::placeholder {
+  color: #8a8a9e;
+}
+
+/* ===== Error Message ===== */
+.error {
+  margin-top: 1rem;
+  color: #ef5350;
+  font-weight: 500;
+}
+
+/* ===== Translation Output ===== */
+.translation-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 16px;
+  color: #e0e0e0;
+  text-align: left;
+  white-space: pre-wrap;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Copy Button ===== */
+.copy-btn {
+  background: #2e3a59;
+  color: #d0d0d0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: #465275;
+  color: #fff;
+}
